@@ -5,13 +5,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class dailyInput {
 
     private static final Path today = Path.of("src\\inputs\\" + "Day_" + LocalDate.now().getDayOfMonth() + ".txt");
     private static List<String> todayList = new ArrayList<>();
+    private static Map<Integer, Integer> todayMap = new HashMap<>();
 
     private static void loadInput() {
         try {

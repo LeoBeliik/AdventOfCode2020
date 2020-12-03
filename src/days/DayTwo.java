@@ -1,7 +1,6 @@
 package days;
 
 import utils.dailyInput;
-
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,7 +8,7 @@ import java.util.regex.Pattern;
 public class DayTwo extends dailyInput {
 
     public static void main(String[] args) {
-        //partOne(getStringList());
+        partOne(getStringList());
         partTwo(getStringList());
     }
 
