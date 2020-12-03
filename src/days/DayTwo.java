@@ -7,13 +7,14 @@ import java.util.regex.Pattern;
 
 public class DayTwo extends dailyInput {
 
+    private static Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
+
     public static void main(String[] args) {
         partOne(getStringList());
         partTwo(getStringList());
     }
 
     private static void partOne(List<String> input) {
-        Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
         int total = 0;
         for (String s : input) {
             Matcher matcher = pattern.matcher(s);
@@ -35,7 +36,6 @@ public class DayTwo extends dailyInput {
     }
 
     private static void partTwo(List<String> list) {
-        Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
         int total = 0;
         for (String s : list) {
             Matcher matcher = pattern.matcher(s);
