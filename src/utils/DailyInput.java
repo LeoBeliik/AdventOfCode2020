@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDate;
@@ -13,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class DailyInput {
 
-    public static final Path today = Path.of("src\\inputs\\" + "Day_" + LocalDate.now().getDayOfMonth() + ".txt");
+    private static final Path today = Path.of("src\\inputs\\" + "Day_" + LocalDate.now().getDayOfMonth() + ".txt");
     private static List<String> todayList = new ArrayList<>();
     private static Map<Integer, Integer> todayMap = new HashMap<>();
 

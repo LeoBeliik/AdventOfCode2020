@@ -5,6 +5,7 @@ import utils.DailyInput;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.IntStream;
 
 public class DayFive extends DailyInput {
 
@@ -19,8 +20,7 @@ public class DayFive extends DailyInput {
         int[] seat = new int[8];
         int max = 0;
         for (String s : list) {
-            s = s.replaceAll("[F|L]", "0");
-            s = s.replaceAll("[B|R]", "1");
+            s = s.replaceAll("[F|L]", "0").replaceAll("[B|R]", "1");
             max = Math.max(max, Integer.parseInt(s, 2));
             seats.add(Integer.parseInt(s, 2)); //for Part Two
         }
@@ -28,11 +28,9 @@ public class DayFive extends DailyInput {
     }
 
     private static void partTwo() {
-        int myId = 0;
-        for (int i = 0; i < seats.size(); i++) {
-            if (!seats.contains(i))
-                myId = i;
-        }
-        System.out.println(myId);
+        IntStream.iterate(seats.size(), i -> i > 1, i -> i - 1)
+                .filter(i -> !seats.contains(i))
+                .findFirst()
+                .ifPresent(System.out::println);
     }
 }
