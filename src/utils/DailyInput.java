@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class dailyInput {
+public class DailyInput {
 
     public static final Path today = Path.of("src\\inputs\\" + "Day_" + LocalDate.now().getDayOfMonth() + ".txt");
     private static List<String> todayList = new ArrayList<>();

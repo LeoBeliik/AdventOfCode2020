@@ -1,11 +1,11 @@
 package days;
 
-import utils.dailyInput;
+import utils.DailyInput;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DayTwo extends dailyInput {
+public class DayTwo extends DailyInput {
 
     private static Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
 
