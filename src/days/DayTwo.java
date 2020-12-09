@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DayTwo extends DailyInput {
+class DayTwo extends DailyInput {
 
-    private static Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
+    private static final Pattern pattern = Pattern.compile("(\\d+)-(\\d+) (\\w): (\\w+)");
 
     public static void main(String[] args) {
         partOne(getStringList());

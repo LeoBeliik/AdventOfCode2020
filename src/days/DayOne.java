@@ -4,7 +4,7 @@ import utils.DailyInput;
 
 import java.util.List;
 
-public class DayOne extends DailyInput {
+class DayOne extends DailyInput {
 
     public static void main(String[] args) {
         partOne(getIntegerList());

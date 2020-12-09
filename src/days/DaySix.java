@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class DaySix extends DailyInput {
+class DaySix extends DailyInput {
 
     public static void main(String[] args) {
         partOne(getStringList());

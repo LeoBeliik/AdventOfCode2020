@@ -1,10 +1,6 @@
 package utils;
 
-import days.DayOne;
-
-import java.io.IOException;
-
-public class measure {
+class measure {
 
     public static void main(String[] args) {
         int time;

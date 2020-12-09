@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-public class DayFive extends DailyInput {
+class DayFive extends DailyInput {
 
-    private static Set<Integer> seats = new HashSet<>();
+    private static final Set<Integer> seats = new HashSet<>();
 
     public static void main(String[] args) {
         partOne(getStringList());

@@ -4,7 +4,7 @@ import utils.DailyInput;
 
 import java.util.List;
 
-public class DayThree extends DailyInput {
+class DayThree extends DailyInput {
     public static void main(String[] args) {
         System.out.println(partOne(3, 1));
         partTwo();

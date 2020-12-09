@@ -32,6 +32,11 @@ public class DailyInput {
         return todayList.stream().map(Integer::parseInt).collect(Collectors.toList());
     }
 
+    protected static List<Long> getLongList() {
+        loadInput();
+        return todayList.stream().map(Long::parseLong).collect(Collectors.toList());
+    }
+
     protected static List<String> getStringList() {
         loadInput();
         return todayList;

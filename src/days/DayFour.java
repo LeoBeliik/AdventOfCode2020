@@ -5,11 +5,11 @@ import utils.DailyInput;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DayFour extends DailyInput {
+class DayFour extends DailyInput {
 
-    private static String[] validators = {"ecl:", "pid:", "eyr:", "hcl:", "byr:", "iyr:", "hgt:"};
-    private static String[] eyeColor = {"amb", "blu", "brn", "gry", "grn", "hzl", "oth"};
-    private static List<String> documents = new ArrayList<>();
+    private static final String[] validators = {"ecl:", "pid:", "eyr:", "hcl:", "byr:", "iyr:", "hgt:"};
+    private static final String[] eyeColor = {"amb", "blu", "brn", "gry", "grn", "hzl", "oth"};
+    private static final List<String> documents = new ArrayList<>();
 
     public static void main(String[] args) {
         partOne(getStringList());
